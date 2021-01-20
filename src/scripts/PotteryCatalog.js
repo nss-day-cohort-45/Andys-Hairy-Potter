@@ -16,15 +16,3 @@ export const toSellOrNotToSell = (pot) => {
   pottery.push(pot);
   return pot;
 };
-
-export const alternative_toSellOrNotToSell = (pot) => {
-  if (pot.cracked) {
-    return pot;
-  }
-
-  pot.price = pot.weight < 6 ? 20 : 40;
-
-  pottery.push(pot);
-  return pot;
-};
-
