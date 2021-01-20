@@ -2,7 +2,8 @@ import { usePottery } from './PotteryCatalog.js';
 
 export const PotteryList = () => {
   const pottery = usePottery();
-  return pottery.map(PotteryHtmlRep).join('');
+  const html = pottery.map((pot) => PotteryHtmlRep(pot)).join('');
+  return html;
 };
 
 const PotteryHtmlRep = (pot) => {
@@ -16,4 +17,5 @@ const PotteryHtmlRep = (pot) => {
           Price is $${pot.price}
       </div>
   </section>`;
-}
+};
+
