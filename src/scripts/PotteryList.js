@@ -5,6 +5,7 @@ export const PotteryList = () => {
   return pottery.map(PotteryHtmlRep).join('');
 };
 
+
 const PotteryHtmlRep = (pot) => {
   return `
   <section class="pottery" id="pottery--${pot.id}">
